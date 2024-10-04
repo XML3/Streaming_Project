@@ -1,20 +1,25 @@
-document.addEventListener("DOMContentLoaded", fetchData); //avoid clicking twice bug
+document.addEventListener("DOMContentLoaded", fetchData);
 
-function fetchData() {
-  fetch("http://localhost:5500/public/streaming.json")
-    .then((Response) => Response.json())
-    .then((data) => {
-      const genres = data.genres;
-      const films = data.films;
-      const series = data.series;
+async function fetchData() {
+  try {
+    const response = await fetch("http://localhost:5500/public/streaming.json");
+    if (!response.ok) {
+      throw new Error(`HTTP error: status ${response.status}`);
+    }
+    const data = await response.json();
+    console.log(data);
+    const genres = data.genres;
+    const films = data.films;
+    const series = data.series;
 
-      //display all items initially / default logic.  This will prevent having to click twice on the icon to load data
-      displayResults(films, series);
+    //display all items initially / default logic.  This will prevent having to click twice on the icon to load data
+    displayResults(films, series);
 
-      // set up genre filternig AFTER data is loaded
-      setGenreFiltering(genres, films, series);
-    })
-    .catch((error) => console.error("Error fetching data:", error));
+    // set up genre filternig AFTER data is loaded
+    setGenreFiltering(genres, films, series);
+  } catch (error) {
+    console.error("Error fetching data:", error);
+  }
 }
 
 //filtering genre for each link
@@ -51,7 +56,7 @@ function displayResults(filteredFilms, filteredSeries) {
   filteredFilms.forEach((film) => {
     const filmCard = `
     <div class="film-card">
-       <img src="${film.image}" alt="${film.title}" style="width:300px;height:170px;" />
+       <img src="${film.image}" alt="${film.title}" style="width:270px;height:150px;" />
     <h4>${film.title}</h4>
     <p>${film.duration} Rating: ${film.rating}</p>
     </div>
@@ -63,7 +68,7 @@ function displayResults(filteredFilms, filteredSeries) {
   filteredSeries.forEach((serie) => {
     const serieCard = `
      <div class="serie-card">
-    <img src="${serie.image}" alt="${serie.title}" style="width:300px;height:170px;" />
+    <img src="${serie.image}" alt="${serie.title}" style="width:270px;height:150px;" />
     <h4>${serie.title}</h4>
     <p>${serie.duration} Rating: ${serie.rating}</p>
     </div>
