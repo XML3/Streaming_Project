@@ -1,0 +1,308 @@
+{
+  "genres": [
+    {
+      "id": "1",
+      "name": "Drama"
+    },
+    {
+      "id": "2",
+      "name": "Comedy"
+    },
+    {
+      "id": "3",
+      "name": "Sci-fi"
+    }
+  ],
+  "films": [
+    {
+      "id": "1",
+      "title": "Dunkirk",
+      "image": "https://i.ibb.co/wQQKbjc/Dunkirk.jpg",
+      "year": "2017",
+      "actors": "Fionn Whitehead, Barry Keoghan, and Mark Rylance",
+      "description": "Allied soldiers from Belgium, the British Commonwealth and Empire, and France are surrounded by the German Army and evacuated during a fierce battle in World War II.",
+      "genres": ["1"],
+      "duration": "1h 46m",
+      "language": "English",
+      "rating": "4.2"
+    },
+    {
+      "id": "2",
+      "title": "Reservoir Dogs",
+      "image": "https://i.ibb.co/6Wv23y8/Reservoir-Dogs.jpg",
+      "year": "1992",
+      "actors": " Harvey Keitel, Tim Roth, Chris Penn, Steve Buscemi, Lawrence Tierney, Michael Madsen, Tarantino, and Edward Bunker",
+      "description": "When a simple jewelry heist goes horribly wrong, the surviving criminals begin to suspect that one of them is a police informant.",
+      "genres": ["1"],
+      "duration": "1h 39m",
+      "language": "English",
+      "rating": "4.4"
+    },
+    {
+      "id": "3",
+      "title": "Oppenheimer",
+      "image": "https://i.ibb.co/1MZ5tcm/Oppenheimer.jpg",
+      "year": "2023",
+      "actors": "Cillian Murphy, Emily Blunt, Matt Damon, Robert Downey Jr, Florence Pugh, Josh Hartnett, Casey Affleck, Rami Malek, and Kenneth Branagh ",
+      "description": "The story of American scientist J. Robert Oppenheimer and his role in the development of the atomic bomb.",
+      "genres": ["1"],
+      "duration": "3h",
+      "language": "English",
+      "rating": "3.6"
+    },
+    {
+      "id": "4",
+      "title": "Gattaca",
+      "image": "https://i.ibb.co/b5DNjsH/gattaca.jpg",
+      "year": "1997",
+      "actors": "Ethan Hawke, Uma Thurman, and Jude Law",
+      "description": "Vincent, an 'In-Valid', assumes the identity of a member of the genetic elite to pursue his goal of traveling into space with the Gattaca Aerospace Corporation. However, a week before his mission, a murder marks Vincent as a suspect.",
+      "genres": ["1", "3"],
+      "duration": "1h 42m",
+      "language": "English",
+      "rating": "4.4"
+    },
+    {
+      "id": "5",
+      "title": "The Holdovers",
+      "image": "https://i.ibb.co/mSg589F/Holdovers.jpg",
+      "year": "2023",
+      "actors": "Paul Giamatti, Da'Vine Joy Randolph, and Dominic Sessa",
+      "description": "A curmudgeonly instructor at a New England school remains on campus during Christmas break. He soon forms an unlikely bond with a brainy but damaged troublemaker, and with the school's cook, a woman who just lost a son in the Vietnam War.",
+      "genres": ["2"],
+      "duration": "2h 13m",
+      "language": "English",
+      "rating": "4.6"
+    },
+    {
+      "id": "6",
+      "title": "The Nice Guys",
+      "image": "https://i.ibb.co/PGqppZf/The-Nice-Guys.jpg",
+      "year": "2016",
+      "actors": "Russell Crowe, Ryan Gosling, and Angourie Rice",
+      "description": "In 1970s Los Angeles, a mismatched pair of private eyes investigate a missing girl and the mysterious death of a porn star.",
+      "genres": ["2"],
+      "duration": "1h 56m",
+      "language": "English",
+      "rating": "4.1"
+    },
+    {
+      "id": "7",
+      "title": "Seven Psychopaths",
+      "image": "https://i.ibb.co/mBtwH6S/Seven-Psychopaths.jpg",
+      "year": "2012",
+      "actors": "Colin Farrell, Woody Harrelson, Christopher Walken, Tom waits, Abbie Cornish, Olga Kurylenko, and Sam Rockwell",
+      "description": "A struggling screenwriter inadvertently becomes entangled in the Los Angeles criminal underworld after his oddball friends kidnap a gangster's beloved Shih Tzu.",
+      "genres": ["2"],
+      "duration": "1h 50m",
+      "language": "English",
+      "rating": "4.1"
+    },
+    {
+      "id": "8",
+      "title": "The Breakfast Club",
+      "image": "https://i.ibb.co/znLpVqV/Breakfast-Club.jpg",
+      "year": "1985",
+      "actors": "Emilio Estevez, Judd Nelson, Molly Ringwald, Anthony Michael Hall, Ally Sheedy and Paul Gleason",
+      "description": "Five high school students meet in Saturday detention and discover how they have a great deal more in common than they thought.",
+      "genres": ["2", "1"],
+      "duration": "1h 37m",
+      "language": "English",
+      "rating": "4.5"
+    },
+    {
+      "id": "9",
+      "title": "Blade Runner",
+      "image": "https://i.ibb.co/F8Th1ch/Blade-Runner-1982.jpg",
+      "year": "1982",
+      "actors": " Harrison Ford, Rutger Hauer, Sean Young, and Edward James Olmos",
+      "description": "The film is set in a dystopian future Los Angeles of 2019, in which synthetic humans known as replicants are bio-engineered by the powerful Tyrell Corporation to work on space colonies. When a fugitive group of advanced replicants led by Roy Batty (Hauer) escapes back to Earth, burnt-out cop Rick Deckard (Ford) reluctantly agrees to hunt them down.",
+      "genres": ["3"],
+      "duration": "1h 57m",
+      "language": "English",
+      "rating": "4.3"
+    },
+    {
+      "id": "10",
+      "title": "Blade Runner 2049",
+      "image": "https://i.ibb.co/VtJQGn8/Blade-Runner-2049.jpg",
+      "year": "2017",
+      "actors": "Ryan Gosling, Harrison Ford, And De Armas, Sylvia Hoeks, Robin Wright, Mackenzie Davis, Dave Bautista, and Jared Leto",
+      "description": "In 2049, 30 years after the events of Blade Runner, bioengineered humans known as replicants are still used for slave labor. K (short for serial number, KD6-3.7), a Nexus-9 replicant, works for the Los Angeles Police Department as a blade runner, an officer who hunts and retires (kills) rogue replicant models.",
+      "genres": ["3"],
+      "duration": "2h 43m",
+      "language": "English",
+      "rating": "4.2"
+    },
+    {
+      "id": "11",
+      "title": "Akira アキラ",
+      "image": "https://i.ibb.co/nD6ynnM/Akira.jpg",
+      "year": "1988",
+      "actors": "Joaquin Phoenix, Amy Adams, Rooney Mara, Olivia Wilde, and Chris Pratt",
+      "description": "Set in a dystopian 2019, it tells the story of Shōtarō Kaneda, the leader of a biker gang whose childhood friend, Tetsuo Shima, acquires incredible telekinetic abilities after a motorcycle accident, eventually threatening an entire military complex amid chaos and rebellion in the sprawling futuristic metropolis of Neo-Tokyo.",
+      "genres": ["3"],
+      "duration": "2h 4m",
+      "language": "Japanese",
+      "rating": "4.5"
+    },
+    {
+      "id": "12",
+      "title": "The Fifth Element",
+      "image": "https://i.ibb.co/qCzQ8RC/Fifth-Element.jpg",
+      "year": "1997",
+      "actors": "Bruce Willis, Milla Jocovich, and Gary Oldman",
+      "description": "In the colorful future, a cab driver unwittingly becomes the central figure in the search for a legendary cosmic weapon to keep Evil and Mr. Zorg at bay.",
+      "genres": ["3"],
+      "duration": "2h 6m",
+      "language": "English",
+      "rating": "4.5"
+    }
+  ],
+  "series": [
+    {
+      "id": "1",
+      "title": "True Detective",
+      "image": "https://i.ibb.co/ykpSTGL/true-detective.jpg",
+      "year": "2014",
+      "actors": "Vince Vaughn, Colin Farrell, Woody Harrelson, Matthew McConaughey, Jody Foster ...",
+      "description": "Anthology series in which police investigations unearth the personal and professional secrets of those involved, both within and outside the law.",
+      "genres": ["1"],
+      "duration": "4 Seasons",
+      "language": "English",
+      "rating": "4.0"
+    },
+    {
+      "id": "2",
+      "title": "Mayor of Kingstown",
+      "image": "https://i.ibb.co/v3LVPXT/MofK.jpg",
+      "year": "2021",
+      "actors": "Jeremy Ranner, Hugh Dillon, Tobi Bamtefa...",
+      "description": "The McLusky family are power brokers tackling themes of systemic racism, corruption and inequality in Kingstown, Michigan, where the business of incarceration is the only thriving industry.",
+      "genres": ["1"],
+      "duration": "3 Seasons",
+      "language": "English",
+      "rating": "4.5"
+    },
+    {
+      "id": "3",
+      "title": "Industry",
+      "image": "https://i.ibb.co/xXSwqvz/industry.jpg",
+      "year": "2020",
+      "actors": "Myha'la, Marisa Abela, Harry Lawtey...",
+      "description": "Young bankers and traders make their way in the financial world in the aftermath of the 2008 collapse.",
+      "genres": ["1"],
+      "duration": "3 Seasons",
+      "language": "English",
+      "rating": "3.8"
+    },
+    {
+      "id": "4",
+      "title": "Pachinko",
+      "image": "https://i.ibb.co/LxDYDBZ/pachinko.jpg",
+      "year": "2022",
+      "actors": "Lee Min-ho, Jin Ha, Minha Kim ...",
+      "description": "This sweeping saga chronicles the hopes and dreams of a Korean immigrant family across four generations as they leave their homeland in an indomitable quest to survive and thrive.",
+      "genres": ["1"],
+      "duration": "2 Seasons",
+      "language": "Korean, Japanese and English",
+      "rating": "4.8"
+    },
+    {
+      "id": "5",
+      "title": "30 Rock",
+      "image": "https://i.ibb.co/1bqK3zR/30-rock.jpg",
+      "year": "2006",
+      "actors": "Tina Fey, Alec Baldwin, Tracy Morgan, Jane Krakowski, and Jack McBrayer",
+      "description": "Liz Lemon, head writer of the sketch-comedy show 'TGS with Tracy Jordan', must deal with an arrogant new boss and a crazy new star while trying to run a successful television show without losing her mind.",
+      "genres": ["2"],
+      "duration": "7 Seasons",
+      "language": "English",
+      "rating": "4.4"
+    },
+    {
+      "id": "6",
+      "title": "Shameless (US)",
+      "image": "https://i.ibb.co/dDtC48p/Shameless.jpg",
+      "year": "2011",
+      "actors": "Emmy Rossum, William H. Macy, Ethan Cutkosky, Jeremy Allen White, Emma Kenney and Brenden Sims",
+      "description": "A scrappy, feisty, fiercely loyal Chicago family makes no apologies.",
+      "genres": ["2"],
+      "duration": "11 Seasons",
+      "language": "English",
+      "rating": "4.7"
+    },
+    {
+      "id": "7",
+      "title": "Absolutely Fabulous",
+      "image": "https://i.ibb.co/K0hh84t/A-F.jpg",
+      "year": "1992",
+      "actors": "Jennifer Saunders, Joanna Lunley, and Julia Sawalha",
+      "description": "The wild misadventures of Edina 'Eddy' Monsoon and her best friend Patsy Stone, who live in a nearly constant haze of drugged, drunken selfishness.",
+      "genres": ["2"],
+      "duration": "6 Seasons",
+      "language": "English",
+      "rating": "4.8"
+    },
+    {
+      "id": "8",
+      "title": "Fleabag",
+      "image": "https://i.ibb.co/176XLwq/fleabag.jpg",
+      "year": "2016",
+      "actors": "Phoebe Waller-Bridge, Sian Clifford and Olivia Colman",
+      "description": "Series adapted from the award-winning play about a young woman trying to cope with life in London whilst coming to terms with a recent tragedy.",
+      "genres": ["2", "1"],
+      "duration": "2 Seasons",
+      "language": "English",
+      "rating": "4.8"
+    },
+    {
+      "id": "9",
+      "title": "Dark Matter",
+      "image": "https://i.ibb.co/1KMm8Xg/Dark-matter.jpg",
+      "'year": "2024",
+      "actors": "Joel Edgerton, Jennifer Connelly, Alice Braga...",
+      "description": "A man is abducted into an alternate version of his life. Amid the mind-bending landscape of lives he could've lived, he embarks on a harrowing journey to get back to his true family and save them from a most terrifying foe: himself.",
+      "genres": ["3"],
+      "duration": "1 Seasons",
+      "language": "English",
+      "rating": "4.4"
+    },
+    {
+      "id": "10",
+      "title": "For All Mankind",
+      "image": "https://i.ibb.co/sbtr3pZ/For-all-mankind.jpg",
+      "year": "2019",
+      "actors": "Joel Kinnaman, Michael Dorman, Wrenn Schmidt...",
+      "description": "In an alternative version of 1969, the Soviet Union beats the United States to the Moon, and the space race continues on for decades with still grander challenges and goals.",
+      "genres": ["3"],
+      "duration": "4 Seasons",
+      "language": "English",
+      "rating": "4.5"
+    },
+    {
+      "id": "11",
+      "title": "Invasion",
+      "image": "https://i.ibb.co/hy88F06/Invasion.jpg",
+      "year": "2021",
+      "actors": "Golshifteh Farahani, Shamier Anderson, Shioli Kutsuna...",
+      "description": "Earth is visited by an alien species that threatens humanity's existence. Events unfold in real time through the eyes of five ordinary people across the globe as they struggle to make sense of the chaos unraveling around them.",
+      "genres": ["3"],
+      "duration": "2 Seasons",
+      "language": "English",
+      "rating": "2.9"
+    },
+    {
+      "id": "12",
+      "title": "The Expanse",
+      "image": "https://i.ibb.co/Wpnrmw7/The-Expanse.jpg",
+      "year": "2015",
+      "actors": "Steven Strait, Dominique Tipper, Wes Chatham....",
+      "description": "The disappearance of rich-girl-turned-political-activist links the lives of Ceres detective, accidental ship captain and U.N. politician. Amidst political tension between Earth, Mars and the Belt, they unravel the greatest conspiracy. ",
+      "genres": ["3"],
+      "duration": "6 Seasons",
+      "language": "English",
+      "rating": "4.8"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+:root {
+  --background-color: #000;
+  --off-white: #ecdfcc;
+  --Main-font: "Roboto Mono", monospace;
+  --Button-bgColor: #0f0f0f;
+  --touchColor: #ff055f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+/*parent*/
+.mainContainer {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 80px 1fr 80px;
+  grid-template-areas: "header" "main" "footer";
+}
+
+/*children*/
+.navContainer {
+  background-color: var(--background-color);
+  color: var(--off-white);
+  grid-area: navContainer;
+  padding: 10px;
+}
+
+header {
+  background-color: var(--background-color);
+  color: var(--off-white);
+  grid-area: header;
+  padding: 10px;
+}
+
+main {
+  background-color: var(--background-color);
+  color: var(--off-white);
+  grid-area: main;
+  padding: 10px;
+}
+
+footer {
+  background-color: transparent;
+  color: var(--off-white);
+  grid-area: footer;
+  padding: 10px;
+}
+
+@media (min-width: 300px) {
+  .mainContainer {
+    grid-template-columns: 1fr;
+    grid-template-rows: 120px 1fr 30%;
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+  }
+}
+
+@media (min-width: 700px) {
+  .mainContainer {
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 300px 1fr 30%;
+    grid-template-areas:
+      "header main"
+      "header footer";
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .mainContainer {
+    grid-template-columns: 150px 4fr;
+    grid-template-rows: 1fr 100px;
+    grid-template-areas:
+      "header main"
+      "header footer";
+  }
+}

@@ -1,0 +1,56 @@
+@media screen and (min-width: 300px) {
+  #film-container {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid var(--Button-bgColor);
+    margin-bottom: 70px;
+  }
+
+  .film-card {
+    display: inline-block;
+    margin: 50px 20px;
+    background-color: var(--Button-bgColor);
+    border-radius: 14px;
+    padding: 2px;
+  }
+
+  .film-card img {
+    border-radius: 12px;
+  }
+
+  .film-card h4,
+  .film-card p {
+    font-family: var(--Main-font);
+    color: var(--off-white);
+    letter-spacing: 0.04em;
+    padding-left: 10px;
+  }
+
+  .film-card p {
+    font-size: 14px;
+  }
+
+  .serie-card {
+    display: inline-block;
+    margin: 20px;
+    background-color: var(--Button-bgColor);
+    border-radius: 14px;
+    padding: 2px;
+  }
+
+  .serie-card img {
+    border-radius: 12px;
+  }
+
+  .serie-card h4,
+  .serie-card p {
+    font-family: var(--Main-font);
+    color: var(--off-white);
+    letter-spacing: 0.04em;
+    padding-left: 10px;
+  }
+
+  .serie-card p {
+    font-size: 14px;
+  }
+}

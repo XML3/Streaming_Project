@@ -1,0 +1,165 @@
+@media screen and (min-width: 300px) {
+  header {
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+    height: auto;
+    background-color: var(--Button-bgColor);
+  }
+
+  #p5-staticTV {
+    grid-column: 1;
+    position: relative;
+    bottom: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .genre-links {
+    grid-column: 2;
+    position: relative;
+    left: 40px;
+    top: 12px;
+    width: 100%;
+  }
+
+  #side-nav li {
+    grid-column: 2;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding-right: 35px;
+  }
+
+  .sideNav a {
+    background-color: transparent;
+
+    color: var(--off-white);
+  }
+
+  .sideNav svg {
+    width: 1.2em;
+    height: 1.2em;
+    vertical-align: middle;
+  }
+
+  .searchIcon li {
+    list-style-type: none;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .genre-links {
+    position: relative;
+    left: 75px;
+    top: 20px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 1fr;
+    width: 100%;
+  }
+
+  #p5-staticTV {
+    grid-row: 1;
+    position: fixed;
+    bottom: 750px;
+    right: 520px;
+    z-index: 3;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .genre-links {
+    grid-row: 2;
+    position: fixed;
+    z-index: 2;
+    top: 250px;
+  }
+
+  #side-nav li {
+    float: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    list-style-type: none;
+    width: 55px;
+    height: 55px;
+    padding-top: 90px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 1fr;
+  }
+  #p5-staticTV {
+    grid-row: 1;
+    position: fixed;
+    top: 45px;
+    right: 871px;
+    z-index: 3;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .genre-links {
+    grid-row: 2;
+    position: fixed;
+    z-index: 2;
+    top: 250px;
+    left: 30px;
+  }
+
+  #side-nav li {
+    float: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    list-style-type: none;
+    width: 55px;
+    height: 55px;
+    padding-top: 90px;
+  }
+
+  .sideNav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 12px 12px;
+    color: var(--off-white);
+  }
+
+  .sideNav svg {
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+  }
+
+  .sideNav svg:hover {
+    color: var(--touchColor);
+  }
+
+  #side-nav a.active {
+    background-color: var(--touchColor);
+  }
+}

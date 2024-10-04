@@ -1,0 +1,107 @@
+@media screen and (min-width: 300px) {
+  .navContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    text-align: center;
+    width: 100%;
+    background-color: transparent;
+    background-color: transparent;
+    margin-bottom: 200px;
+  }
+
+  #navTop li {
+    display: flex;
+    position: relative;
+    right: 20px;
+    margin-right: 20px;
+    list-style-type: none;
+    margin-top: 2%;
+  }
+
+  .nav-top a {
+    background-color: var(--Button-bgColor);
+    border-radius: 12px;
+    color: var(--off-white);
+    text-align: center;
+    padding: 12px 12px;
+    text-decoration: none;
+    font-family: var(--Main-font);
+    font-weight: 200;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+  }
+
+  .nav-top svg {
+    vertical-align: middle;
+    width: 1.2em;
+    height: 1.2em;
+  }
+
+  .nav-top svg:hover {
+    color: var(--touchColor);
+  }
+
+  .nav-top a:hover {
+    border: 1px solid var(--touchColor);
+    border-radius: 12px;
+  }
+
+  #navTop a.active {
+    background-color: var(--touchColor);
+    border-radius: 12px;
+    color: var(--Button-bgColor);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .navContainer {
+    display: flex;
+    justify-content: flex-start;
+    background-color: transparent;
+    margin-bottom: 120px;
+  }
+
+  #navTop li {
+    float: left;
+    position: relative;
+    left: 100px;
+    margin-right: 150px;
+    list-style-type: none;
+  }
+
+  .nav-top a {
+    background-color: var(--Button-bgColor);
+    border-radius: 12px;
+    color: var(--off-white);
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+    font-family: var(--Main-font);
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    position: fixed;
+    z-index: 1;
+  }
+
+  .nav-top svg {
+    vertical-align: top;
+    width: 1.2em;
+    height: 1.2em;
+  }
+  .nav-top svg:hover {
+    color: var(--touchColor);
+  }
+
+  .nav-top a:hover {
+    border: 1px solid var(--touchColor);
+    border-radius: 12px;
+  }
+
+  #navTop a.active {
+    background-color: var(--touchColor);
+    border-radius: 12px;
+    color: var(--Button-bgColor);
+  }
+}

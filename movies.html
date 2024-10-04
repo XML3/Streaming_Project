@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--googlefonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Streaming Service Mockup</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/navTop.css" />
+    <link rel="stylesheet" href="/css/sideNav.css" />
+    <link rel="stylesheet" href="/css/movies.css" />
+    <link rel="stylesheet" href="/css/series.css" />
+    <link rel="stylesheet" href="/css/cards.css" />
+  </head>
+
+  <body>
+    <div class="mainContainer" id="main-container">
+      <header>
+        <div class="sideNavContainer" id="side-nav-container">
+          <nav class="sideNav" id="side-nav"></nav>
+        </div>
+      </header>
+
+      <main>
+        <div class="navContainer" id="nav-container">
+          <nav class="nav-top" id="navTop"></nav>
+        </div>
+
+        <div class="movies-page" id="movies">
+          <div class="section">
+            <h2 class="section-title">Films</h2>
+            <div id="filmCatalog" class="catalog"></div>
+          </div>
+        </div>
+      </main>
+
+      <footer>Footer</footer>
+    </div>
+
+    <script type="module" src="/js/script.js"></script>
+    <script type="module" src="/js/navTop.js"></script>
+    <script type="module" src="/js/sideNav.js"></script>
+    <script type="module" src="/js/films.js"></script>
+  </body>
+</html>

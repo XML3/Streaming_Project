@@ -1,0 +1,100 @@
+@media screen and (min-width: 300px) {
+  .section {
+    margin-left: 1px;
+  }
+
+  .section-title {
+    font-family: var(--Main-font);
+    font-weight: 200;
+    color: var(--touchColor);
+  }
+
+  .film-card {
+    display: block;
+    margin: 20px;
+    background-color: var(--Button-bgColor);
+    border-radius: 14px;
+    padding: 2px;
+  }
+
+  .film-card h4,
+  .film-card p {
+    font-family: var(--Main-font);
+    color: var(--off-white);
+    letter-spacing: 0.06em;
+    padding-left: 10px;
+  }
+  .film-card p {
+    font-size: 14px;
+  }
+
+  .serie-card {
+    display: block;
+    margin: 20px;
+    background-color: var(--Button-bgColor);
+    border-radius: 14px;
+    padding: 2px;
+  }
+
+  .serie-card h4,
+  .serie-card p {
+    font-family: var(--Main-font);
+    color: var(--off-white);
+    letter-spacing: 0.04em;
+    padding-left: 10px;
+  }
+
+  .serie-card p {
+    font-size: 14px;
+  }
+  .catalog {
+    width: 100%;
+    height: auto;
+  }
+
+  .section img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+  }
+
+  .genre-container {
+    width: 100%;
+    height: auto;
+    border-top: 1px solid var(--Button-bgColor);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-title {
+    font-weight: 700;
+    font-size: 42px;
+    margin-left: 1%;
+  }
+  .genre-container {
+    margin-bottom: 5%;
+  }
+
+  .genre-container h3 {
+    font-size: 32px;
+    font-family: var(--Main-font);
+    margin-left: 1.5%;
+  }
+
+  .film-card p {
+    font-size: 16px;
+  }
+
+  .serie-card p {
+    font-size: 16px;
+  }
+
+  .carousel {
+    display: flex;
+    flex-direction: row;
+  }
+  .catalog {
+    width: 100%;
+    height: auto;
+  }
+}
