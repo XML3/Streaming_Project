@@ -69,7 +69,7 @@
   .section-title {
     font-weight: 700;
     font-size: 42px;
-    margin-left: 1%;
+    margin-left: 10;
   }
   .genre-container {
     margin-bottom: 5%;
@@ -78,7 +78,7 @@
   .genre-container h3 {
     font-size: 32px;
     font-family: var(--Main-font);
-    margin-left: 1.5%;
+    margin-left: 0;
   }
 
   .film-card p {
