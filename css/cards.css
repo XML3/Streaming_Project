@@ -20,8 +20,9 @@
   .film-card h4,
   .film-card p {
     font-family: var(--Main-font);
+    font-weight: 200;
     color: var(--off-white);
-    letter-spacing: 0.06em;
+    letter-spacing: 0.02em;
     padding-left: 10px;
   }
   .film-card p {
@@ -39,8 +40,9 @@
   .serie-card h4,
   .serie-card p {
     font-family: var(--Main-font);
+    font-weight: 200;
     color: var(--off-white);
-    letter-spacing: 0.04em;
+    letter-spacing: 0.02em;
     padding-left: 10px;
   }
 
