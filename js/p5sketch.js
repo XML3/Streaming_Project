@@ -138,7 +138,7 @@ let sketch = (p) => {
       }
     }
   };
-  // p.noLoop();
+  p.noLoop();
 
   p.windowResized = () => {
     p.resizeCanvas(p.windowWidth, p.windowHeight);
