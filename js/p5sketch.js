@@ -37,8 +37,8 @@ let sketch = (p) => {
       p.numOfScreensWide = 4;
       p.numOfScreensTall = 4;
     } else {
-      canvasWidth = 800;
-      canvasHeight = 600;
+      canvasWidth = 1100;
+      canvasHeight = 750;
       p.numOfScreensWide = 4;
       p.numOfScreensTall = 4;
     }
