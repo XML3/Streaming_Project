@@ -1,7 +1,12 @@
 let x = 50;
 let y = 50;
+let netSvg;
 
 let sketchTV = (p) => {
+  p.preload = () => {
+    netSvg = p.loadImage("public/img/svg/network.svg");
+    console.log(netSvg);
+  };
   p.setup = () => {
     let canvasWidth;
     let canvasHeight;
@@ -44,11 +49,13 @@ let sketchTV = (p) => {
       }
     }
     p.updatePixels();
+
     p.fill("#ff055f");
-    p.textSize(48);
-    p.text("TV", 30, 60);
+    p.imageMode(p.CENTER);
+    p.image(netSvg, p.width / 2, p.height / 2, 50, 50);
+
     p.describe(
-      "The word 'TV' written inside a white noise background rectangle"
+      "a rectangle mimicking a static tv with a network antenna in the middle"
     );
     p.pop();
   };
