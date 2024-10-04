@@ -7,7 +7,7 @@ async function fetchData() {
       throw new Error(`HTTP error: status ${response.status}`);
     }
     const data = await response.json();
-    console.log(data);
+
     const genres = data.genres;
     const films = data.films;
     const series = data.series;
