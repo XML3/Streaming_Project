@@ -39,7 +39,7 @@ function displayFilmsByGenre(films, genres) {
         filmCard.classList.add("film-card");
 
         filmCard.innerHTML = `
-        <img src="${film.image}" alt="${film.title}" style="width:300px;height:170px;"/>
+        <img src="${film.image}" alt="${film.title}" style="width:270px;height:170px;"/>
         <h4>${film.title}</h4>
         <p>${film.duration} Rating: ${film.rating}</p>
         `;
@@ -74,7 +74,7 @@ function displaySeriesByGenre(series, genres) {
         serieCard.classList.add("serie-card");
 
         serieCard.innerHTML = `
-             <img src="${serie.image}" alt="${serie.title}" style="width:300px;height:170px;"/>
+             <img src="${serie.image}" alt="${serie.title}" style="width:270px;height:150px;"/>
              <h4>${serie.title}</h4>
              <p>${serie.duration} Rating: ${serie.rating}</p>
         `;
