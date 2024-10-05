@@ -39,9 +39,13 @@ function displayFilmsByGenre(films, genres) {
         filmCard.classList.add("film-card");
 
         filmCard.innerHTML = `
-        <img src="${film.image}" alt="${film.title}" style="width:270px;height:170px;"/>
+        <div class="film-img">
+        <img src="${film.image}" alt="${film.title}" />
+        </div>
+         <div class="film-info">
         <h4>${film.title}</h4>
         <p>${film.duration} Rating: ${film.rating}</p>
+        </div>
         `;
         //placeholder for possible added carousel implementation for genre films and append film card to carousel for display
         filmCarousel.appendChild(filmCard);
