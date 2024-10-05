@@ -32,7 +32,6 @@
   .serie-card {
     display: block;
     margin: 20px;
-    background-color: var(--Button-bgColor);
     border-radius: 14px;
     padding: 2px;
   }
@@ -63,7 +62,6 @@
   .genre-container {
     width: 100%;
     height: auto;
-    border-top: 1px solid var(--Button-bgColor);
   }
 }
 
@@ -71,10 +69,10 @@
   .section-title {
     font-weight: 700;
     font-size: 42px;
-    margin-left: 10;
+    margin-left: 10px;
   }
   .genre-container {
-    margin-bottom: 5%;
+    margin-bottom: 1%;
   }
 
   .genre-container h3 {
@@ -97,8 +95,8 @@
   }
 
   .film-img img {
-    width: 100%;
-    height: 100%;
+    width: 270px;
+    height: 150px;
     transition: transform 0.3s ease;
     z-index: 1;
   }
@@ -126,16 +124,74 @@
 
   .film-info p {
     font-size: 16px;
+    margin-left: 1rem;
   }
 
-  .serie-card p {
+  .rating-icon {
+    display: inline-block;
+    margin-left: 3rem;
+    vertical-align: middle;
+  }
+
+  /*Series Cards*/
+
+  .serie-card {
+    position: relative;
+    overflow: hidden;
+    width: 270px;
+    height: 300px;
+    margin: 20px;
+    border-radius: 12px;
+    z-index: 1;
+  }
+  .serie-card:hover {
+    transform: scale(1.1);
+    margin: 40px;
+  }
+
+  .serie-img img {
+    width: 270px;
+    height: 150px;
+    transition: transform 0.3s ease;
+    z-index: 1;
+  }
+
+  .serie-info {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 12px;
+    color: var(--off-white) f;
+    z-index: -1;
+    transition: top 0.5s ease;
+  }
+
+  .serie-card:hover .serie-info {
+    top: 53%;
+  }
+
+  .serie-card:hover .serie-img img {
+    transform: scale(1.1);
+  }
+
+  .serie-info p {
     font-size: 16px;
+    margin-left: 0.5rem;
+  }
+  .rating-icon-s {
+    display: inline-block;
+    margin-left: 1rem;
+    vertical-align: middle;
   }
 
   .carousel {
     display: flex;
     flex-direction: row;
   }
+
   .catalog {
     width: 100%;
     height: auto;
