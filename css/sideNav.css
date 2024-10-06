@@ -29,7 +29,6 @@
 
   .sideNav a {
     background-color: transparent;
-
     color: var(--off-white);
   }
 
@@ -37,6 +36,11 @@
     width: 1.2em;
     height: 1.2em;
     vertical-align: middle;
+  }
+
+  .sideNav svg:hover {
+    color: #ff005f;
+    transform: scale(1.3);
   }
 }
 
@@ -79,11 +83,32 @@
     height: 55px;
     padding-top: 90px;
   }
+  .sideNav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 10px 10px;
+    color: var(--off-white);
+    background-image: linear-gradient(
+      to bottom right,
+      #ff005f 0%,
+      #610979 30%,
+      #020024 90%
+    );
+  }
 
   .sideNav svg {
-    width: 1.6em;
-    height: 1.6em;
+    width: 1.3em;
+    height: 1.3em;
     vertical-align: middle;
+  }
+  .sideNav svg:hover {
+    color: var(--off-white);
+  }
+
+  .sideNav a:hover {
+    transform: scale(1.2);
   }
 }
 
@@ -140,8 +165,8 @@
     color: var(--off-white);
   }
 
-  .sideNav svg:hover {
-    color: rgb(5, 249, 249);
+  .sideNav a:hover {
+    transform: scale(1.3);
   }
 
   #side-nav a.active {
