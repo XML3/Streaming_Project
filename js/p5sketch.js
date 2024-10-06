@@ -17,8 +17,6 @@ let sketch = (p) => {
   p.setup = () => {
     let canvasWidth;
     let canvasHeight;
-    // let canvas = p.createCanvas(800, 600); max size
-    // canvas.parent("p5-container");
 
     //respnsive by screen size
     if (p.windowWidth < 400) {
