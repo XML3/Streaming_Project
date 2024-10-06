@@ -1,7 +1,7 @@
 :root {
   --background-color: #000;
   --off-white: #ecdfcc;
-  --Main-font: "Roboto Mono", monospace;
+  --Main-font: "Poppins", sans-serif;
   --Button-bgColor: #0f0f0f;
   --touchColor: #ff055f;
 }
@@ -55,7 +55,7 @@ footer {
 @media (min-width: 300px) {
   .mainContainer {
     grid-template-columns: 1fr;
-    grid-template-rows: 120px 1fr 12%;
+    grid-template-rows: 100px 1fr 12%;
     grid-template-areas:
       "header"
       "main"
@@ -65,7 +65,7 @@ footer {
 
 @media (min-width: 700px) {
   .mainContainer {
-    grid-template-columns: 120px 1fr;
+    grid-template-columns: 130px 1fr;
     grid-template-rows: 1fr 1fr 30%;
     grid-template-areas:
       "header main"
@@ -73,7 +73,7 @@ footer {
   }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1200px) {
   .mainContainer {
     grid-template-columns: 150px 4fr;
     grid-template-rows: 1fr 100px;
