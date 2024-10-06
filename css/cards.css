@@ -5,126 +5,101 @@
 
   .section-title {
     font-family: var(--Main-font);
-    font-weight: 200;
-    color: var(--touchColor);
-  }
-
-  /* .film-card {
-    display: block;
-    margin: 20px;
-    background-color: var(--Button-bgColor);
-    border-radius: 14px;
-    padding: 2px;
-  } */
-
-  .film-card h4,
-  .film-card p {
-    font-family: var(--Main-font);
-    font-weight: 200;
-    color: var(--off-white);
-    letter-spacing: 0.02em;
-    padding-left: 10px;
-  }
-  .film-card p {
-    font-size: 14px;
-  }
-
-  .serie-card {
-    display: block;
-    margin: 20px;
-    border-radius: 14px;
-    padding: 2px;
-  }
-
-  .serie-card h4,
-  .serie-card p {
-    font-family: var(--Main-font);
-    font-weight: 200;
-    color: var(--off-white);
-    letter-spacing: 0.02em;
-    padding-left: 10px;
-  }
-
-  .serie-card p {
-    font-size: 14px;
-  }
-  .catalog {
-    width: 100%;
-    height: auto;
-  }
-
-  .section img {
-    width: 100%;
-    height: auto;
-    border-radius: 12px;
-  }
-
-  .genre-container {
-    width: 100%;
-    height: auto;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .section-title {
-    font-weight: 700;
-    font-size: 42px;
-    margin-left: 10px;
-  }
-  .genre-container {
-    margin-bottom: 1%;
+    font-weight: 400;
+    font-size: 32px;
+    /* color: var(--touchColor); */
+    background: linear-gradient(
+      to right,
+      #ff005f 0%,
+      #610979 21%,
+      #020024 100%
+    );
+    -webkit-background-clip: text;
+    color: transparent;
   }
 
   .genre-container h3 {
-    font-size: 32px;
     font-family: var(--Main-font);
-    margin-left: 0;
+    font-weight: 200;
   }
-  .film-card {
+
+  .film-card,
+  .serie-card {
     position: relative;
     overflow: hidden;
-    width: 270px;
-    height: 300px;
-    margin: 20px;
+    width: 240px;
+    height: 180px;
+    margin: 2px;
     border-radius: 12px;
     z-index: 1;
   }
-  .film-card:hover {
-    transform: scale(1.1);
-    margin: 40px;
+
+  .film-info h4,
+  .serie-info h4 {
+    font-family: var(--Main-font);
+    font-weight: 600;
+    color: var(--off-white);
+    letter-spacing: 0.02em;
+    padding-left: 10px;
   }
 
-  .film-img img {
-    width: 270px;
-    height: 150px;
+  .film-info p {
+    font-family: var(--Main-font);
+    color: var(--off-white);
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 1rem;
+    letter-spacing: 0.02em;
+    padding-left: 10px;
+  }
+
+  .serie-info p {
+    font-family: var(--Main-font);
+    color: var(--off-white);
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 1rem;
+    letter-spacing: 0.02em;
+    padding-left: 1px;
+  }
+
+  .film-card:hover,
+  .serie-card:hover {
+    transform: scale(0.9);
+    margin: 10px;
+  }
+
+  .film-img img,
+  .serie-img img {
+    width: 240px;
+    height: 130px;
+    border-radius: 12px;
     transition: transform 0.3s ease;
     z-index: 1;
   }
 
-  .film-info {
+  .film-info,
+  .serie-info {
     position: absolute;
-    top: -100%;
+    bottom: -100%;
     left: 0;
     width: 100%;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 12px;
     color: var(--off-white) f;
-    z-index: -1;
-    transition: top 0.5s ease;
+    z-index: 1;
+    transition: bottom 0.5s ease;
   }
 
-  .film-card:hover .film-info {
-    top: 53%;
+  .film-card:hover .film-info,
+  .serie-card:hover .serie-info {
+    bottom: 20%;
   }
 
-  .film-card:hover .film-img img {
+  .film-card:hover .film-img img,
+  .serie-card:hover .serie-img img {
     transform: scale(1.1);
-  }
-
-  .film-info p {
-    font-size: 16px;
-    margin-left: 1rem;
   }
 
   .rating-icon {
@@ -133,22 +108,100 @@
     vertical-align: middle;
   }
 
-  /*Series Cards*/
+  .rating-icon-s {
+    display: inline-block;
+    margin-left: 1rem;
+    vertical-align: middle;
+  }
 
+  .catalog {
+    width: 100%;
+    height: auto;
+  }
+
+  .genre-container {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .film-card,
+  .serie-card {
+    width: 340px;
+    height: 280px;
+    margin: 2px;
+  }
+
+  .film-img img,
+  .serie-img img {
+    width: 340px;
+    height: 200px;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+    z-index: 1;
+  }
+
+  .serie-info p {
+    font-size: 18px;
+    margin-left: 0.5rem;
+  }
+  .rating-icon-s {
+    display: inline-block;
+    margin-left: 5rem;
+    vertical-align: middle;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .film-card,
+  .serie-card {
+    position: relative;
+    transform: translateX(25%);
+  }
+
+  .film-card:hover,
+  .serie-card:hover {
+    transform: scale(0.9);
+    transform: translateX(25%);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-title {
+    font-weight: 700;
+    font-size: 42px;
+    margin-left: 10px;
+    background: linear-gradient(to right, #ff005f 0%, #610979 5%, #020024 20%);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  .genre-container h3 {
+    font-size: 32px;
+    font-family: var(--Main-font);
+    font-weight: 400;
+    margin-left: 0;
+  }
+
+  .film-card,
   .serie-card {
     position: relative;
     overflow: hidden;
+    transform: translateX(0%);
     width: 270px;
     height: 300px;
     margin: 20px;
     border-radius: 12px;
     z-index: 1;
   }
+  .film-card:hover,
   .serie-card:hover {
     transform: scale(1.1);
     margin: 40px;
   }
 
+  .film-img img,
   .serie-img img {
     width: 270px;
     height: 150px;
@@ -156,6 +209,7 @@
     z-index: 1;
   }
 
+  .film-info,
   .serie-info {
     position: absolute;
     top: -100%;
@@ -169,18 +223,33 @@
     transition: top 0.5s ease;
   }
 
+  .film-card:hover .film-info,
   .serie-card:hover .serie-info {
     top: 53%;
   }
 
+  .film-card:hover .film-img img,
   .serie-card:hover .serie-img img {
     transform: scale(1.1);
   }
 
+  .film-info h4,
+  .serie-info h4 {
+    letter-spacing: 0;
+  }
+
+  .film-info p,
   .serie-info p {
     font-size: 16px;
-    margin-left: 0.5rem;
+    margin-left: 1rem;
   }
+
+  .rating-icon {
+    display: inline-block;
+    margin-left: 3rem;
+    vertical-align: middle;
+  }
+
   .rating-icon-s {
     display: inline-block;
     margin-left: 1rem;
