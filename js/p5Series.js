@@ -13,6 +13,11 @@ let sketch = (p) => {
     let canvas = p.createCanvas(canvasWidth, canvasHeight);
     canvas.parent("p5-series");
 
+    canvas.elt.setAttribute(
+      "aria-label",
+      "Edited video from the series The Expanse"
+    );
+
     //Creates a background with a play symbol
     p.background(0);
     p.triangle(215, 110, 275, 140, 215, 170);
@@ -23,6 +28,8 @@ let sketch = (p) => {
     video.volume(0);
     video.play();
     p.clear();
+
+    p.describe("Edited video from the series The Expanse");
   };
 
   p.draw = () => {
