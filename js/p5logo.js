@@ -4,14 +4,12 @@ let netSvg;
 
 let sketchTV = (p) => {
   p.preload = () => {
-    netSvg = p.loadImage("public/img/svg/network.svg");
+    netSvg = p.loadImage("public/img/svg/glasses.svg");
     console.log(netSvg);
   };
   p.setup = () => {
     let canvasWidth;
     let canvasHeight;
-    // let canvas = p.createCanvas(120, 80);
-    // canvas.parent("p5-staticTV");
 
     //responsive
     if (p.windowWidth < 400) {
@@ -52,10 +50,10 @@ let sketchTV = (p) => {
 
     p.fill("#ff055f");
     p.imageMode(p.CENTER);
-    p.image(netSvg, p.width / 2, p.height / 2, 50, 50);
+    p.image(netSvg, p.width / 2, p.height / 2, 60, 60);
 
     p.describe(
-      "a rectangle mimicking a static tv with a network antenna in the middle"
+      "a small type logo static tv with an old-school pair of 3D movie glasses in the centre"
     );
     p.pop();
   };
