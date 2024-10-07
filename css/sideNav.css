@@ -69,8 +69,9 @@
 
   #p5-staticTV {
     grid-row: 1;
+
     position: relative;
-    transform: translate(0%, 40%);
+    transform: translate(-10%, 40%);
     z-index: 3;
   }
 
@@ -79,8 +80,8 @@
     transform: translate(0%, 100%);
     float: none;
     list-style-type: none;
-    width: 55px;
-    height: 55px;
+    width: 45px;
+    height: 45px;
     padding-top: 90px;
   }
   .sideNav a {
@@ -98,8 +99,8 @@
   }
 
   .sideNav svg {
-    width: 1.3em;
-    height: 1.3em;
+    width: 1.1em;
+    height: 1.1em;
     color: var(--off-white);
     vertical-align: middle;
   }
