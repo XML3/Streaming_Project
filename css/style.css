@@ -65,7 +65,7 @@ footer {
 
 @media (min-width: 700px) {
   .mainContainer {
-    grid-template-columns: 130px 1fr;
+    grid-template-columns: 110px 1fr;
     grid-template-rows: 1fr 1fr 30%;
     grid-template-areas:
       "header main"
