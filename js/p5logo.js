@@ -19,8 +19,8 @@ let sketchTV = (p) => {
       canvasWidth = 85;
       canvasHeight = 60;
     } else if (p.windowWidth < 1200) {
-      canvasWidth = 110;
-      canvasHeight = 75;
+      canvasWidth = 100;
+      canvasHeight = 65;
     } else {
       canvasWidth = 120;
       canvasHeight = 80;
