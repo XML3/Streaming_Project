@@ -89,7 +89,6 @@
     align-items: center;
     border-radius: 50%;
     padding: 10px 10px;
-    color: var(--off-white);
     background-image: linear-gradient(
       to bottom right,
       #ff005f 0%,
@@ -101,10 +100,11 @@
   .sideNav svg {
     width: 1.3em;
     height: 1.3em;
+    color: var(--off-white);
     vertical-align: middle;
   }
   .sideNav svg:hover {
-    color: var(--off-white);
+    color: var(--Button-bgColor);
   }
 
   .sideNav a:hover {
@@ -149,12 +149,11 @@
     align-items: center;
     border-radius: 50%;
     padding: 12px 12px;
-    color: var(--off-white);
     background-image: linear-gradient(
       to bottom right,
       #ff005f 0%,
-      #610979 30%,
-      #020024 90%
+      #610979 50%,
+      #020024 100%
     );
   }
 
@@ -170,6 +169,6 @@
   }
 
   #side-nav a.active {
-    background-color: var(--touchColor);
+    background-color: var(--off-white);
   }
 }
