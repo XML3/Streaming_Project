@@ -30,13 +30,13 @@ let sketch = (p) => {
       p.numOfScreensWide = 4;
       p.numOfScreensTall = 4;
     } else if (p.windowWidth < 1200) {
-      canvasWidth = 400;
-      canvasHeight = 300;
+      canvasWidth = 300;
+      canvasHeight = 240;
       p.numOfScreensWide = 4;
       p.numOfScreensTall = 4;
     } else {
-      canvasWidth = 1100;
-      canvasHeight = 750;
+      canvasWidth = 800;
+      canvasHeight = 600;
       p.numOfScreensWide = 4;
       p.numOfScreensTall = 4;
     }
