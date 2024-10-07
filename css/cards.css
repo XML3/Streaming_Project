@@ -126,6 +126,10 @@
 }
 
 @media screen and (min-width: 400px) {
+  .section {
+    margin-top: 6rem;
+  }
+
   .film-card,
   .serie-card {
     width: 340px;
