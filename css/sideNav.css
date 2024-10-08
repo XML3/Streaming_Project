@@ -11,7 +11,7 @@
   #p5-staticTV {
     grid-column: 1;
     position: relative;
-    transform: translateY(25%);
+    transform: translateY(15%);
     width: 100%;
   }
 
@@ -23,8 +23,9 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    transform: translateY(-70%);
     padding-right: 25px;
-    padding-top: 10px;
+    padding-top: 15px;
   }
 
   .sideNav a {
@@ -33,8 +34,8 @@
   }
 
   .sideNav svg {
-    width: 1.2em;
-    height: 1.2em;
+    width: 1em;
+    height: 1em;
     vertical-align: middle;
   }
 
@@ -159,8 +160,8 @@
   }
 
   .sideNav svg {
-    width: 1.5em;
-    height: 1.5em;
+    width: 1.2em;
+    height: 1.2em;
     vertical-align: middle;
     color: var(--off-white);
   }
