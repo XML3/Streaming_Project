@@ -57,7 +57,7 @@ footer {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 100px 12%;
     grid-template-areas:
-      /* "header" */
+      "header"
       "main"
       "header"
       "footer";
