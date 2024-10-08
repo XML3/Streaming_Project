@@ -55,10 +55,11 @@ footer {
 @media (min-width: 300px) {
   .mainContainer {
     grid-template-columns: 1fr;
-    grid-template-rows: 100px 1fr 12%;
+    grid-template-rows: 1fr 100px 12%;
     grid-template-areas:
-      "header"
+      /* "header" */
       "main"
+      "header"
       "footer";
   }
 }
