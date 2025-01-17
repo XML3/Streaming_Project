@@ -1,7 +1,7 @@
-let akiraPath = "/public/img/Akira_100.mp4";
-let pachinkoPath = "/public/img/pachinko_100.mp4";
-let fabolousPath = "/public/img/af_100.mp4";
-let expansePath = "/public/img/expanse_100.mp4";
+let akiraPath = "/img/Akira_100.mp4";
+let pachinkoPath = "/img/pachinko_100.mp4";
+let fabolousPath = "/img/af_100.mp4";
+let expansePath = "/img/expanse_100.mp4";
 
 let akiraVideo, pachinkoVideo, fabolousVideo, expanseVideo;
 let videos;

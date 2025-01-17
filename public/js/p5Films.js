@@ -2,7 +2,7 @@ console.log("p5Series.js is loaded");
 
 let video;
 let isVolumeOn = true;
-let videoPath = "/public/img/blade_100.mp4";
+let videoPath = "/img/blade_100.mp4";
 
 let sketch = (p) => {
   p.preload = () => {
