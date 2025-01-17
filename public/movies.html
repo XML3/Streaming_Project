@@ -13,12 +13,12 @@
     />
 
     <title>Streaming Service Mockup</title>
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/navTop.css" />
-    <link rel="stylesheet" href="/css/sideNav.css" />
-    <link rel="stylesheet" href="/css/search.css" />
-    <link rel="stylesheet" href="/css/cards.css" />
-    <link rel="stylesheet" href="/css/footer.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/navTop.css" />
+    <link rel="stylesheet" href="css/sideNav.css" />
+    <link rel="stylesheet" href="css/cards.css" />
+    <link rel="stylesheet" href="css/p5Films.css" />
+    <link rel="stylesheet" href="css/footer.css" />
   </head>
 
   <body>
@@ -29,10 +29,6 @@
           <div class="genre-links">
             <nav class="sideNav" id="side-nav"></nav>
           </div>
-
-          <div class="searchSectionIcon">
-            <nav class="searchIcon"></nav>
-          </div>
         </div>
       </header>
 
@@ -41,28 +37,28 @@
           <nav class="nav-top" id="navTop"></nav>
         </div>
 
-        <div id="search-main-container"></div>
-
-        <div class="section">
-          <h2 class="section-title">Films</h2>
-          <div id="filmCatalog" class="catalog"></div>
+        <div id="p5-films-container">
+          <div id="p5-films"></div>
         </div>
 
-        <div class="section">
-          <h2 class="section-title">Series</h2>
-          <div id="seriesCatalog" class="catalog"></div>
+        <div class="movies-page" id="movies">
+          <div class="section">
+            <h2 class="section-title">Films</h2>
+            <div id="filmCatalog" class="catalog"></div>
+          </div>
         </div>
       </main>
+
       <footer>
         <p>Streming Service Mockup - Xagly Montilva 2024</p>
       </footer>
     </div>
 
-    <script type="module" src="/js/script.js"></script>
-    <script type="module" src="/js/navTop.js"></script>
-    <script type="module" src="/js/sideNav.js"></script>
-    <script type="module" src="/js/searchBar.js"></script>
+    <script type="module" src="js/script.js"></script>
+    <script type="module" src="js/navTop.js"></script>
+    <script type="module" src="js/sideNav.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
-    <script src="/js/p5logo.js"></script>
+    <script src="js/p5logo.js"></script>
+    <script src="js/p5Films.js"></script>
   </body>
 </html>

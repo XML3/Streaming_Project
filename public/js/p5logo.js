@@ -4,7 +4,7 @@ let netSvg;
 
 let sketchTV = (p) => {
   p.preload = () => {
-    netSvg = p.loadImage("public/img/svg/glasses.svg");
+    netSvg = p.loadImage("img/svg/glasses.svg");
     console.log(netSvg);
   };
   p.setup = () => {
