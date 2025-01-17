@@ -14,9 +14,11 @@
     display: flex;
     justify-content: end;
     position: relative;
-    margin-right: 15px;
+    right: 10%;
+    /* margin-right: 15px; */
     list-style-type: none;
     margin-top: 2%;
+    padding-top: 10px;
   }
 
   .nav-top a {
