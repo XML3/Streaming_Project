@@ -57,7 +57,7 @@
       "year": "1997",
       "actors": "Ethan Hawke, Uma Thurman, and Jude Law",
       "description": "Vincent, an 'In-Valid', assumes the identity of a member of the genetic elite to pursue his goal of traveling into space with the Gattaca Aerospace Corporation. However, a week before his mission, a murder marks Vincent as a suspect.",
-      "genres": ["1", "3"],
+      "genres": ["1"],
       "duration": "1h 42m",
       "language": "English",
       "rating": "4.4"
@@ -105,7 +105,7 @@
       "year": "1985",
       "actors": "Emilio Estevez, Judd Nelson, Molly Ringwald, Anthony Michael Hall, Ally Sheedy and Paul Gleason",
       "description": "Five high school students meet in Saturday detention and discover how they have a great deal more in common than they thought.",
-      "genres": ["2", "1"],
+      "genres": ["2"],
       "duration": "1h 37m",
       "language": "English",
       "rating": "4.5"
@@ -251,7 +251,7 @@
       "year": "2016",
       "actors": "Phoebe Waller-Bridge, Sian Clifford and Olivia Colman",
       "description": "Series adapted from the award-winning play about a young woman trying to cope with life in London whilst coming to terms with a recent tragedy.",
-      "genres": ["2", "1"],
+      "genres": ["2"],
       "duration": "2 Seasons",
       "language": "English",
       "rating": "4.8"
