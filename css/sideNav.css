@@ -123,9 +123,9 @@
 
   #p5-staticTV {
     grid-row: 1;
-    position: fixed;
-    bottom: 850px;
-    transform: translateX(-47%);
+    position: relative;
+    bottom: 50px;
+    transform: translateX(-1%);
     width: 100%;
     display: flex;
     justify-content: center;
@@ -135,6 +135,8 @@
 
   #side-nav li {
     float: none;
+    position: relative;
+    transform: translateY(80%);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -142,7 +144,7 @@
     list-style-type: none;
     width: 55px;
     height: 55px;
-    padding-top: 90px;
+    padding-top: 80px;
   }
 
   .sideNav a {
