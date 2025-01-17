@@ -4,7 +4,8 @@ const genreLinks = document.querySelectorAll(".sideNav a");
 
 async function fetchData() {
   try {
-    const response = await fetch("http://localhost:5500/public/streaming.json");
+    // const response = await fetch("http://localhost:5500/public/streaming.json");
+    const response = await fetch("/streaming.json");
     if (!response.ok) {
       throw new Error(`HTTP error: status ${response.status}`);
     }
