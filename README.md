@@ -2,7 +2,7 @@
 A front-end project built with HTML, CSS, JavaScript, and p5.js that simulates a streaming service with a unique video sculpture experience. The app allows users to explore and interact with a variety of films and series through an intuitive interface.
 
 
-![Mack-Streaming Service](https://i.ibb.co/mFqghj9R/streaming.png)
+![Mock-Streaming Service App](https://i.ibb.co/mFqghj9R/streaming.png)
 
 ## Features
 Video Sculpture: A creative video display inspired by the works of Nam June Paik, offering an engaging and artistic experience.
