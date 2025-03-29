@@ -1,7 +1,8 @@
 # Pop Cinema - Mock Streaming Service
 A front-end project built with HTML, CSS, JavaScript, and p5.js that simulates a streaming service with a unique video sculpture experience. The app allows users to explore and interact with a variety of films and series through an intuitive interface.
 
-![Mock-Streaning Service](https://i.ibb.co/mFqghj9R/streaming.png)
+
+![Mack-Streaming Service](https://i.ibb.co/mFqghj9R/streaming.png)
 
 ## Features
 Video Sculpture: A creative video display inspired by the works of Nam June Paik, offering an engaging and artistic experience.
@@ -82,4 +83,3 @@ Automatic Video Play: When navigating to a movie or series page, the video will 
 
 
 
-![Mack-Streaming Service](https://i.ibb.co/mFqghj9R/streaming.png)
