@@ -1,31 +1,28 @@
 @media screen and (min-width: 300px) {
   .navContainer {
     display: flex;
-    flex-direction: column;
-    text-align: center;
+    flex-direction: row;
+    justify-content: center;
     width: 100%;
     background-color: transparent;
     margin-bottom: 5rem;
   }
 
   #navTop li {
-    position: relative;
-    left: 40%;
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    float: left;
     position: relative;
-    margin-right: 45%;
-    list-style-type: none;
-    margin-top: 2%;
-    padding-top: 10px;
+    right: 10%;
   }
 
   .nav-top a {
-    background-color: var(--Button-bgColor);
-    border-radius: 12px;
+    padding-left: 10%;
     color: var(--off-white);
     text-align: center;
-    padding: 10px 10px;
     text-decoration: none;
     font-family: var(--Main-font);
     font-weight: 200;
@@ -34,45 +31,26 @@
   }
 
   .nav-top svg {
-    position: relative;
-    top: 10%;
     width: 1.2em;
     height: 1.2em;
   }
 
   .nav-top a:hover {
     border: 1px solid var(--touchColor);
-    border-radius: 12px;
+    border-radius: 5px;
   }
 
   #navTop a.active {
-    background-image: linear-gradient(
-      to right,
-      #ff005f 0%,
-      #610979 61%,
-      #020024 100%
-    );
     text-align: center;
-    text-transform: uppercase;
     transition: 0.5s;
-    color: white;
-    border-radius: 12px;
-    color: var(--Button-bgColor);
+    color: #ff005f;
+    border-radius: 5px;
   }
 }
 
 @media screen and (min-width: 400px) {
   .navContainer {
     margin-bottom: 3rem;
-  }
-
-  #navTop li {
-    align-items: center;
-    position: relative;
-    transform: translateX(-40%);
-    margin-right: 9px;
-    list-style-type: none;
-    margin-top: 2%;
   }
 
   .nav-top a {
@@ -83,10 +61,6 @@
 }
 
 @media screen and (min-width: 700px) {
-  .navContainer {
-    margin-bottom: 3rem;
-  }
-
   #navTop li {
     position: relative;
     transform: translateX(30%);
@@ -95,9 +69,48 @@
   }
 
   .nav-top a {
-    padding: 10px 10px;
     font-weight: 300;
     font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .navContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 5rem;
+  }
+  #navTop li {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    left: 48%;
+  }
+
+  .nav-top a {
+    border: 1px solid var(--touchColor);
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: 300;
+    font-size: 16px;
+  }
+
+  .nav-top a:hover {
+    border: 1px solid var(--touchColor);
+    border-radius: 5px;
+    background-image: transparent;
+  }
+
+  .nav-top svg {
+    text-align: center;
+    width: 1.5em;
+    height: 1.5em;
   }
 }
 
@@ -108,17 +121,16 @@
     width: 100%;
     height: auto;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
     margin-bottom: 5rem;
-    position: relative;
-    right: 15%;
   }
 
   #navTop li {
     float: left;
     display: flex;
     align-items: center;
-    margin-top: 1%;
+    position: relative;
+    left: -100px;
   }
 
   .nav-top a {
@@ -126,7 +138,6 @@
     padding: 14px 55px;
     font-weight: 400;
     font-size: 18px;
-    position: relative;
     z-index: 5;
   }
 
@@ -139,7 +150,5 @@
 
   #navTop a.active {
     margin: 10px;
-    padding: 14px 45px;
   }
-
 }

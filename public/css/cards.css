@@ -18,6 +18,10 @@
     color: transparent;
   }
 
+  .genre-container {
+    background-color: var(--Button-bgColor);
+  }
+
   .genre-container h3 {
     font-family: var(--Main-font);
     font-weight: 200;
@@ -71,6 +75,7 @@
 
   .film-img img,
   .serie-img img {
+    object-fit: cover;
     width: 240px;
     height: 130px;
     border-radius: 12px;
@@ -85,7 +90,7 @@
     left: 0;
     width: 100%;
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: var(--Button-bgColor);
     border-radius: 12px;
     color: var(--off-white) f;
     z-index: 1;
@@ -176,9 +181,119 @@
     font-weight: 700;
     font-size: 42px;
     margin-left: 10px;
-    background: linear-gradient(to right, #ff005f 0%, #610979 5%, #020024 20%);
-    -webkit-background-clip: text;
-    color: transparent;
+  }
+
+  .genre-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+    border-radius: 12px;
+    background-color: var(--Button-bgColor);
+  }
+
+  .film-card,
+  .serie-card {
+    position: relative;
+    overflow: hidden;
+    transform: translateX(0%);
+    width: 250px;
+    height: 300px;
+    margin: 20px;
+    border-radius: 12px;
+    z-index: 1;
+  }
+
+  .film-card:hover,
+  .serie-card:hover {
+    transform: scale(1.1);
+  }
+
+  .film-img img,
+  .serie-img img {
+    width: 250px;
+    height: 150px;
+    transition: transform 0.3s ease;
+    z-index: 1;
+  }
+
+  .film-info,
+  .serie-info {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    border-radius: 12px;
+    color: var(--off-white);
+    z-index: -1;
+    transition: top 0.5s ease;
+  }
+
+  .film-card:hover .film-info,
+  .serie-card:hover .serie-info {
+    top: 53%;
+  }
+
+  .film-card:hover .film-img img,
+  .serie-card:hover .serie-img img {
+    transform: scale(1.1);
+  }
+
+  .film-info h4,
+  .serie-info h4 {
+    letter-spacing: 0;
+  }
+
+  .film-info p,
+  .serie-info p {
+    font-size: 16px;
+    margin-left: 1rem;
+  }
+
+  .rating-icon {
+    display: inline-block;
+    margin-left: 3rem;
+    vertical-align: middle;
+  }
+
+  .rating-icon-s {
+    display: inline-block;
+    margin-left: 1rem;
+    vertical-align: middle;
+  }
+
+  .carousel {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .catalog {
+    width: 100%;
+    height: auto;
+  }
+}
+@media screen and (min-width: 1480px) {
+  .genre-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+    border-radius: 12px;
+    background-color: var(--Button-bgColor);
   }
 
   .genre-container h3 {
@@ -202,7 +317,7 @@
   .film-card:hover,
   .serie-card:hover {
     transform: scale(1.1);
-    margin: 40px;
+    /* margin: 40px; */
   }
 
   .film-img img,
@@ -220,7 +335,6 @@
     left: 0;
     width: 100%;
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.7);
     border-radius: 12px;
     color: var(--off-white) f;
     z-index: -1;

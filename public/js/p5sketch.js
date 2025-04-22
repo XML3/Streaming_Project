@@ -34,6 +34,11 @@ let sketch = (p) => {
       canvasHeight = 240;
       p.numOfScreensWide = 4;
       p.numOfScreensTall = 4;
+    } else if (p.windowWidth < 1480) {
+      canvasWidth = 550;
+      canvasHeight = 400;
+      p.numOfScreensWide = 4;
+      p.numOfScreensTall = 4;
     } else {
       canvasWidth = 800;
       canvasHeight = 600;
@@ -136,7 +141,6 @@ let sketch = (p) => {
       }
     }
   };
-  // p.noLoop();
 
   p.windowResized = () => {
     p.resizeCanvas(p.windowWidth, p.windowHeight);

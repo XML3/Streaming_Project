@@ -1,3 +1,81 @@
+@media screen and (min-width: 300px) {
+  .results-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Button-bgColor);
+    padding: 1rem;
+  }
+  .film-card,
+  .serie-card {
+    position: relative;
+    overflow: hidden;
+    width: 240px;
+    height: 180px;
+    margin: 2px;
+    border-radius: 12px;
+    z-index: 1;
+  }
+
+  .film-img img,
+  .serie-img img {
+    object-fit: cover;
+    width: 240px;
+    height: 130px;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+    z-index: 1;
+  }
+
+  .serie-info p {
+    font-size: 18px;
+    margin-left: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .results-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: var(--Button-bgColor);
+    border-radius: 12px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+  }
+  .film-card,
+  .serie-card {
+    position: relative;
+    overflow: hidden;
+    width: 240px;
+    height: 180px;
+    margin: 2px;
+    border-radius: 12px;
+    z-index: 1;
+    padding: 3px;
+  }
+
+  .film-img img,
+  .serie-img img {
+    object-fit: cover;
+    width: 240px;
+    height: 130px;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+    z-index: 1;
+  }
+
+  .serie-info p {
+    font-size: 18px;
+    margin-left: 0.5rem;
+  }
+}
 @media screen and (min-width: 1200px) {
   .film-section {
     margin-top: 20rem;
@@ -8,105 +86,27 @@
     font-size: 42px;
     margin-left: 10px;
   }
-  .results-container {
-    display: flex;
-    flex-direction: row;
-  }
 
-  .film-card {
-    display: inline-block;
-    margin: 20px;
-    border-radius: 14px;
-    padding: 2px;
-  }
-
-  .filmCard {
-    position: relative;
-    overflow: hidden;
-    width: 270px;
-    height: 300px;
-    margin: 20px;
-    border-radius: 12px;
-    z-index: 1;
-  }
-
-  .filmCard:hover {
-    transform: scale(1.1);
-    margin: 40px;
-  }
-
-  .film-img img {
-    width: 270px;
-    height: 150px;
-    transition: transform 0.3s ease;
-    z-index: 1;
-  }
-
-  .film-info {
-    position: absolute;
-    top: -100%;
-    left: 0;
-    width: 100%;
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 12px;
-    color: var(--off-white) f;
-    z-index: -1;
-    transition: top 0.5s ease;
-  }
-
-  .film-card:hover .film-info {
-    top: 53%;
-  }
-
-  .film-card:hover .film-img img {
-    transform: scale(1.1);
-  }
-
-  .film-card h4,
-  .film-card p {
-    font-family: var(--Main-font);
-    color: var(--off-white);
-    letter-spacing: 0.04em;
-    padding-left: 10px;
-  }
-
-  .film-info p {
-    font-size: 16px;
-    margin-left: 1rem;
-  }
-
-  .rating-icon {
-    display: inline-block;
-    margin-left: 3rem;
-    vertical-align: middle;
-  }
-
-  /*Series Section*/
-
+  .film-card,
   .serie-card {
-    display: inline-block;
-    flex-wrap: wrap;
-    margin: 20px;
-    border-radius: 14px;
-    padding: 2px;
-  }
-
-  .serieCard {
     position: relative;
     overflow: hidden;
+    transform: translateX(0%);
     width: 270px;
     height: 300px;
     margin: 20px;
+    padding: 2px;
     border-radius: 12px;
     z-index: 1;
   }
 
-  .searieCard:hover {
+  .filmCard:hover,
+  .serieCard:hover {
     transform: scale(1.1);
     margin: 40px;
   }
 
+  .film-img img,
   .serie-img img {
     width: 270px;
     height: 150px;
@@ -114,26 +114,32 @@
     z-index: 1;
   }
 
+  .film-info,
   .serie-info {
     position: absolute;
     top: -100%;
     left: 0;
     width: 100%;
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: var(--B);
     border-radius: 12px;
     color: var(--off-white) f;
     z-index: -1;
     transition: top 0.5s ease;
   }
 
-  .serie-card:hover .film-info {
+  .film-card:hover .film-info,
+  .serie-card:hover .series-info {
     top: 53%;
   }
 
-  .serie-card:hover .film-img img {
+  .film-card:hover .film-img img,
+  .serie-card:hover .series-img img {
     transform: scale(1.1);
   }
+
+  .film-card h4,
+  .film-card p,
   .serie-info h4,
   .serie-info p {
     font-family: var(--Main-font);
@@ -142,9 +148,16 @@
     padding-left: 10px;
   }
 
+  .film-info p,
   .serie-info p {
     font-size: 16px;
-    margin-left: 0.5rem;
+    margin-left: 1rem;
+  }
+
+  .rating-icon {
+    display: inline-block;
+    margin-left: 3rem;
+    vertical-align: middle;
   }
 
   .rating-icon-s {
