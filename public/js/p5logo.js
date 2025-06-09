@@ -57,6 +57,7 @@ let sketchTV = (p) => {
     );
     p.pop();
   };
+  noLoop();
 
   p.windowResized = () => {
     p.resizeCanvas(p.windowWidth, p.windowHeight);

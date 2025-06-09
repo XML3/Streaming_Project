@@ -121,7 +121,7 @@ async function initialize() {
       const genreId = e.target.id;
 
       const filteredFilms = films.filter((film) =>
-        film.genres.include(genreId)
+        film.genres.includes(genreId)
       );
       const filteredSeries = series.filter((serie) =>
         serie.genres.includes(genreId)

@@ -25,23 +25,23 @@ let sketch = (p) => {
       p.numOfScreensWide = 4;
       p.numOfScreensTall = 4;
     } else if (p.windowWidth < 700) {
-      canvasWidth = 325;
+      canvasWidth = 700;
       canvasHeight = 275;
       p.numOfScreensWide = 4;
       p.numOfScreensTall = 4;
     } else if (p.windowWidth < 1200) {
-      canvasWidth = 300;
-      canvasHeight = 240;
-      p.numOfScreensWide = 4;
-      p.numOfScreensTall = 4;
-    } else if (p.windowWidth < 1480) {
-      canvasWidth = 550;
+      canvasWidth = 700;
       canvasHeight = 400;
       p.numOfScreensWide = 4;
       p.numOfScreensTall = 4;
+    } else if (p.windowWidth < 1480) {
+      canvasWidth = 1100;
+      canvasHeight = 800;
+      p.numOfScreensWide = 4;
+      p.numOfScreensTall = 4;
     } else {
-      canvasWidth = 800;
-      canvasHeight = 600;
+      canvasWidth = 1600;
+      canvasHeight = 800;
       p.numOfScreensWide = 4;
       p.numOfScreensTall = 4;
     }
@@ -141,7 +141,7 @@ let sketch = (p) => {
       }
     }
   };
-
+  // noLoop();
   p.windowResized = () => {
     p.resizeCanvas(p.windowWidth, p.windowHeight);
     p.setup();

@@ -1,7 +1,17 @@
-footer p {
-  display: flex;
-  justify-content: center;
-  /* text-align: center; */
-  transform: translateY(100%);
-  font-size: 12px;
+@media screen and (min-width: 300px) {
+  #footer {
+    grid-row: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* take full row height as defined by the grid */
+    background-color: #222; /* optional for visibility */
+  }
+
+  #footer p {
+    font-size: 14px;
+    color: var(--off-white);
+    text-align: center;
+    margin: 0;
+  }
 }

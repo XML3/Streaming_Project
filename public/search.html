@@ -14,7 +14,7 @@
 
     <title>Streaming Service Mockup</title>
     <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/navTop.css" />
+    <link rel="stylesheet" href="/css/hero.css" />
     <link rel="stylesheet" href="/css/sideNav.css" />
     <link rel="stylesheet" href="/css/search.css" />
     <link rel="stylesheet" href="/css/cards.css" />
@@ -24,23 +24,24 @@
   <body>
     <div class="mainContainer" id="main-container">
       <header>
-        <div id="p5-staticTV"></div>
-        <div class="sideNavContainer" id="side-nav-container">
-          <div class="genre-links">
-            <nav class="sideNav" id="side-nav"></nav>
-          </div>
-
-          <div class="searchSectionIcon">
-            <nav class="searchIcon"></nav>
-          </div>
-        </div>
-      </header>
-
-      <main>
         <div class="navContainer" id="nav-container">
           <nav class="nav-top" id="navTop"></nav>
         </div>
+        <div class="full-section">
+          <img class="hero-image" src="img/hero-image.png" />
+        </div>
+      </header>
+      <div class="sideNavContainer" id="side-nav-container">
+        <div class="genre-links">
+          <nav class="sideNav" id="side-nav"></nav>
+        </div>
+      </div>
 
+      <!-- <div class="searchSectionIcon">
+        <nav class="searchIcon"></nav>
+      </div> -->
+
+      <main>
         <div id="search-main-container">
           <h2 class="search-title">Search</h2>
         </div>
@@ -55,7 +56,8 @@
           <div id="seriesCatalog" class="catalog"></div>
         </div>
       </main>
-      <footer>
+
+      <footer id="footer">
         <p>Streming Service Mockup - Xagly Montilva 2024</p>
       </footer>
     </div>
@@ -65,6 +67,5 @@
     <script type="module" src="/js/sideNav.js"></script>
     <script type="module" src="/js/searchBar.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
-    <script src="/js/p5logo.js"></script>
   </body>
 </html>

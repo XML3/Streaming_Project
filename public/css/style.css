@@ -1,13 +1,15 @@
 :root {
-  --background-color: #000;
-  --off-white: #ecdfcc;
+  --background-color: #333333;
+  --off-white: #d9d9d9;
   --Main-font: "Poppins", sans-serif;
-  --Button-bgColor: #0f0f0f;
-  --touchColor: #ff055f;
+  --Button-bgColor: #2a2a2a;
+  --touchColor: #0f0f0f;
+  --nav-bg: hsla(60, 5%, 41%, 0.5);
 }
 
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
 body {
@@ -15,70 +17,63 @@ body {
 }
 
 /*parent*/
+/* Global fallback for very small screens or when no media query matches */
 .mainContainer {
-  height: 100vh;
   display: grid;
+  grid-template-rows:
+    minmax(300px, 40vh) /* Row 1: header + hero */
+    minmax(60px, 80px) /* Row 2: sidenav */
+    1fr /* Row 3: main */
+    minmax(100px, 15vh); /* Row 4: footer */
   grid-template-columns: 1fr;
-  grid-template-rows: 80px 1fr 80px;
-  grid-template-areas: "header" "main" "footer";
-}
-
-/*children*/
-.navContainer {
-  background-color: var(--background-color);
-  color: var(--off-white);
-  grid-area: navContainer;
-  padding: 10px;
-}
-
-header {
-  background-color: var(--background-color);
-  color: var(--off-white);
-  grid-area: header;
-  padding: 10px;
-}
-
-main {
-  background-color: var(--background-color);
-  color: var(--off-white);
-  grid-area: main;
-  padding: 10px;
-}
-
-footer {
-  background-color: transparent;
-  color: var(--off-white);
-  grid-area: footer;
-  padding: 10px;
+  height: 100vh;
 }
 
 @media (min-width: 300px) {
   .mainContainer {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 100px 12%;
-    grid-template-areas:
-      "main"
-      "header"
-      "footer";
+    grid-template-rows:
+      minmax(300px, 40vh) /* Hero + TopNav */
+      minmax(80px, 80px) /* SideNav — controlled height */
+      1fr /* Main content */
+      minmax(100px, 15vh); /* Footer */
   }
 }
-
 @media (min-width: 700px) {
   .mainContainer {
-    grid-template-columns: 110px 1fr;
-    grid-template-rows: 1fr 1fr 30%;
-    grid-template-areas:
-      "header main"
-      "header footer";
+    grid-template-rows:
+      minmax(500px, 50vh)
+      minmax(60px, 90px)
+      1fr
+      minmax(100px, 15vh);
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media (min-width: 1024px) and (max-height: 600px) {
   .mainContainer {
-    grid-template-columns: 150px 4fr;
-    grid-template-rows: 1fr 100px;
-    grid-template-areas:
-      "header main"
-      "header footer";
+    grid-template-rows:
+      minmax(450px, 50vh)
+      minmax(40px, 80px)
+      1fr
+      minmax(80px, 12vh);
+  }
+}
+
+@media (min-width: 1200px) {
+  .mainContainer {
+    grid-template-rows:
+      minmax(700px, 70vh)
+      minmax(100px, 90px)
+      1fr
+      minmax(120px, 15vh);
+  }
+}
+
+@media (min-width: 1440px) {
+  .mainContainer {
+    grid-template-rows:
+      minmax(700px, 65vh)
+      minmax(70px, 100px)
+      1fr
+      minmax(80px, 15vh);
   }
 }

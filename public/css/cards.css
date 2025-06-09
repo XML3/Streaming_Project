@@ -1,21 +1,18 @@
 @media screen and (min-width: 300px) {
   .section {
-    margin-left: 1px;
+    grid-row: 3;
+    position: relative;
+    background-color: #1e1e1e;
+    margin-bottom: 3rem;
   }
 
   .section-title {
+    display: flex;
+    justify-content: center;
     font-family: var(--Main-font);
     font-weight: 400;
-    font-size: 32px;
-    /* color: var(--touchColor); */
-    background: linear-gradient(
-      to right,
-      #ff005f 0%,
-      #610979 21%,
-      #020024 100%
-    );
-    -webkit-background-clip: text;
-    color: transparent;
+    font-size: 24px;
+    color: var(--off-white);
   }
 
   .genre-container {
@@ -23,17 +20,40 @@
   }
 
   .genre-container h3 {
+    display: flex;
+    justify-content: center;
     font-family: var(--Main-font);
+    font-size: 20px;
     font-weight: 200;
+    padding: 5%;
+    color: var(--off-white);
   }
 
+  .catalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1rem;
+    gap: 2rem;
+  }
+  .carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem; /* spacing between cards */
+    padding: 1rem;
+  }
   .film-card,
   .serie-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
     position: relative;
     overflow: hidden;
     width: 240px;
     height: 180px;
-    margin: 2px;
     border-radius: 12px;
     z-index: 1;
   }
@@ -47,30 +67,19 @@
     padding-left: 10px;
   }
 
-  .film-info p {
+  .film-info p,
+  .serie-info p {
     font-family: var(--Main-font);
     color: var(--off-white);
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
-    margin-left: 1rem;
     letter-spacing: 0.02em;
     padding-left: 10px;
   }
 
-  .serie-info p {
-    font-family: var(--Main-font);
-    color: var(--off-white);
-    font-size: 18px;
-    font-weight: 400;
-    margin-left: 1rem;
-    letter-spacing: 0.02em;
-    padding-left: 1px;
-  }
-
   .film-card:hover,
   .serie-card:hover {
-    transform: scale(0.9);
-    margin: 10px;
+    transform: top scale(0.9);
   }
 
   .film-img img,
@@ -109,19 +118,12 @@
 
   .rating-icon {
     display: inline-block;
-    margin-left: 3rem;
     vertical-align: middle;
   }
 
   .rating-icon-s {
     display: inline-block;
-    margin-left: 1rem;
     vertical-align: middle;
-  }
-
-  .catalog {
-    width: 100%;
-    height: auto;
   }
 
   .genre-container {
@@ -131,10 +133,6 @@
 }
 
 @media screen and (min-width: 400px) {
-  .section {
-    margin-top: 6rem;
-  }
-
   .film-card,
   .serie-card {
     width: 340px;
@@ -163,24 +161,118 @@
 }
 
 @media screen and (min-width: 700px) {
+  .section {
+    grid-row: 4;
+    position: relative;
+    margin-top: 100px;
+  }
+
+  .section-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--Main-font);
+    font-weight: 400;
+    font-size: 32px;
+    color: var(--off-white);
+  }
+
+  .catalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 5rem;
+    gap: 4rem;
+  }
+  .carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem; /* spacing between cards */
+    padding: 1rem;
+  }
   .film-card,
   .serie-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
     position: relative;
-    transform: translateX(25%);
+    overflow: hidden;
+    width: 350px;
+    height: 300px;
+    border-radius: 12px;
+    z-index: 1;
   }
 
   .film-card:hover,
   .serie-card:hover {
-    transform: scale(0.9);
-    transform: translateX(25%);
+    transform: top scale(0.9);
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .section {
+    grid-row: 3;
+    position: relative;
+    background-color: #1e1e1e;
+    margin-bottom: 3rem;
+    margin-top: 320px;
+  }
+  .catalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1rem;
+    gap: 2rem;
+  }
+  .carousel {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem; /* spacing between cards */
+    padding: 1rem;
+  }
+  .film-card,
+  .serie-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    overflow: hidden;
+    width: 240px;
+    height: 180px;
+    border-radius: 12px;
+    z-index: 1;
+  }
+
+  .film-img img,
+  .serie-img img {
+    width: 240px;
+    height: 150px;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+    z-index: 1;
+  }
+
+  .film-card:hover .film-info,
+  .serie-card:hover .serie-info {
+    bottom: 2%;
+  }
+}
 @media screen and (min-width: 1200px) {
+  .section {
+    grid-row: 3;
+    background-color: #1e1e1e;
+    margin-bottom: 3rem;
+  }
   .section-title {
     font-weight: 700;
-    font-size: 42px;
-    margin-left: 10px;
+    font-size: 38px;
   }
 
   .genre-container {
@@ -189,20 +281,19 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: left;
     flex-wrap: wrap;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    padding: 0.5rem;
     border-radius: 12px;
     background-color: var(--Button-bgColor);
+  }
+
+  .genre-container h3 {
+    font-size: 24px;
   }
 
   .film-card,
   .serie-card {
     position: relative;
     overflow: hidden;
-    transform: translateX(0%);
     width: 250px;
     height: 300px;
     margin: 20px;
@@ -212,7 +303,7 @@
 
   .film-card:hover,
   .serie-card:hover {
-    transform: scale(1.1);
+    transform: top scale(1.1);
   }
 
   .film-img img,
@@ -221,24 +312,6 @@
     height: 150px;
     transition: transform 0.3s ease;
     z-index: 1;
-  }
-
-  .film-info,
-  .serie-info {
-    position: absolute;
-    top: -100%;
-    left: 0;
-    width: 100%;
-    padding: 10px;
-    border-radius: 12px;
-    color: var(--off-white);
-    z-index: -1;
-    transition: top 0.5s ease;
-  }
-
-  .film-card:hover .film-info,
-  .serie-card:hover .serie-info {
-    top: 53%;
   }
 
   .film-card:hover .film-img img,
@@ -254,18 +327,17 @@
   .film-info p,
   .serie-info p {
     font-size: 16px;
-    margin-left: 1rem;
   }
 
   .rating-icon {
     display: inline-block;
-    margin-left: 3rem;
+
     vertical-align: middle;
   }
 
   .rating-icon-s {
     display: inline-block;
-    margin-left: 1rem;
+
     vertical-align: middle;
   }
 
@@ -274,50 +346,41 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
-
-  .catalog {
-    width: 100%;
-    height: auto;
-  }
 }
 @media screen and (min-width: 1480px) {
   .genre-container {
-    width: 100%;
+    width: 90%;
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: left;
+    align-items: center;
     flex-wrap: wrap;
-    margin-top: 2rem;
     margin-bottom: 2rem;
-    padding: 0.5rem;
     border-radius: 12px;
-    background-color: var(--Button-bgColor);
+    background-color: va(--background-color);
   }
 
   .genre-container h3 {
     font-size: 32px;
     font-family: var(--Main-font);
     font-weight: 400;
-    margin-left: 0;
   }
 
   .film-card,
   .serie-card {
+    display: flex;
+    justify-content: center;
     position: relative;
     overflow: hidden;
-    transform: translateX(0%);
     width: 270px;
     height: 300px;
-    margin: 20px;
     border-radius: 12px;
     z-index: 1;
   }
   .film-card:hover,
   .serie-card:hover {
-    transform: scale(1.1);
-    /* margin: 40px; */
+    transform: top scale(1.1);
   }
 
   .film-img img,
@@ -326,19 +389,6 @@
     height: 150px;
     transition: transform 0.3s ease;
     z-index: 1;
-  }
-
-  .film-info,
-  .serie-info {
-    position: absolute;
-    top: -100%;
-    left: 0;
-    width: 100%;
-    padding: 10px;
-    border-radius: 12px;
-    color: var(--off-white) f;
-    z-index: -1;
-    transition: top 0.5s ease;
   }
 
   .film-card:hover .film-info,
@@ -353,24 +403,25 @@
 
   .film-info h4,
   .serie-info h4 {
-    letter-spacing: 0;
+    letter-spacing: 1.5;
   }
 
   .film-info p,
   .serie-info p {
     font-size: 16px;
-    margin-left: 1rem;
+    padding-left: 10px;
   }
 
   .rating-icon {
     display: inline-block;
-    margin-left: 3rem;
+    padding-left: 50%;
+
     vertical-align: middle;
   }
 
   .rating-icon-s {
     display: inline-block;
-    margin-left: 1rem;
+
     vertical-align: middle;
   }
 

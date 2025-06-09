@@ -7,6 +7,7 @@
     background-color: var(--Button-bgColor);
     padding: 1rem;
   }
+
   .film-card,
   .serie-card {
     position: relative;
@@ -34,21 +35,36 @@
   }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 700px) {
+  #by-genre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+  }
   .results-container {
-    width: 100%;
+    width: 80%;
     height: auto;
     display: flex;
     flex-direction: row;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    gap: 2rem;
     background-color: var(--Button-bgColor);
     border-radius: 12px;
-    margin-top: 2rem;
+    margin-top: 1rem;
     margin-bottom: 2rem;
-    padding: 0.5rem;
+    /* padding: 0.5rem; */
   }
+  #film-container,
+  #series-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
   .film-card,
   .serie-card {
     position: relative;
@@ -76,15 +92,45 @@
     margin-left: 0.5rem;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  #by-genre {
+    margin-top: 18rem;
+  }
+}
 @media screen and (min-width: 1200px) {
-  .film-section {
-    margin-top: 20rem;
-    margin-left: 1px;
+  #by-genre {
+    margin-top: 15rem;
+  }
+  .results-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    background-color: var(--Button-bgColor);
+    border-radius: 12px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    /* padding: 0.5rem; */
+  }
+  #film-container,
+  #series-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
   .section-title {
     font-weight: 700;
-    font-size: 42px;
-    margin-left: 10px;
+    font-size: 38px;
+  }
+
+  .results-container {
+    width: 100%;
+    max-width: 1500px;
   }
 
   .film-card,
@@ -151,18 +197,18 @@
   .film-info p,
   .serie-info p {
     font-size: 16px;
-    margin-left: 1rem;
+    /* margin-left: 1rem; */
   }
 
   .rating-icon {
     display: inline-block;
-    margin-left: 3rem;
+    /* margin-left: 3rem; */
     vertical-align: middle;
   }
 
   .rating-icon-s {
     display: inline-block;
-    margin-left: 1rem;
+    /* margin-left: 1rem; */
     vertical-align: middle;
   }
 }

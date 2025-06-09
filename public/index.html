@@ -14,37 +14,18 @@
 
     <title>Pop Cinema</title>
     <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/cards.css" />
-    <link rel="stylesheet" href="/css/navTop.css" />
-    <link rel="stylesheet" href="/css/p5sketch.css" />
+    <link rel="stylesheet" href="/css/hero.css" />
     <link rel="stylesheet" href="/css/sideNav.css" />
+    <link rel="stylesheet" href="/css/cards.css" />
     <link rel="stylesheet" href="/css/footer.css" />
   </head>
 
   <body>
     <div class="mainContainer" id="main-container">
       <header>
-        <div id="p5-staticTV"></div>
-        <div class="sideNavContainer" id="side-nav-container">
-          <div class="genre-links">
-            <nav class="sideNav" id="side-nav">
-              <ul>
-                <li><a href="#" id="drama"></a></li>
-                <li><a href="#" id="comedy"></a></li>
-                <li><a href="#" id="sci-fi"></a></li>
-                <li><a href="#" id="setting"></a></li>
-                <li><a href="#" id="profile"></a></li>
-                <li><a href="#" id="searchLink"></a></li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </header>
-
-      <main>
         <div class="navContainer" id="nav-container">
-          <nav class="nav-top" id="navTop">
-            <ul>
+          <nav>
+            <ul id="navTop" class="nav-top">
               <li><a href="#"></a></li>
               <li><a href="#"></a></li>
               <li><a href="#"></a></li>
@@ -52,23 +33,24 @@
           </nav>
         </div>
         <div class="full-section">
-          <div id="p5-container"></div>
-          <div class="emptyCard">
-            <div class="funCard">
-              <h2>Fun Fact</h2>
-              <p>
-                Nam June Paik (1932 - 2006) was a Korean American artist
-                considered to be the founder of video art. Paik is known for his
-                video sculptures consisting of television monitors, where he
-                experimented with video transmission and manipulation—across an
-                era when video and TV were emerging technologies. He is also
-                credited with the first use (1974) of the term "electronic super
-                highway".
-              </p>
-            </div>
-          </div>
+          <img class="hero-image" src="img/hero-image.png" />
         </div>
+      </header>
 
+      <div class="sideNavContainer" id="side-nav-container">
+        <div class="genre-links">
+          <nav>
+            <ul class="sideNav" id="side-nav">
+              <li><a href="#" id="drama"></a></li>
+              <li><a href="#" id="comedy"></a></li>
+              <li><a href="#" id="sci-fi"></a></li>
+              <li><a href="#" id="searchLink"></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <main>
         <div class="section">
           <h2 class="section-title">Films</h2>
           <div id="filmCatalog" class="catalog">
@@ -94,7 +76,7 @@
         <div class="series-page" id="series"></div>
       </main>
 
-      <footer>
+      <footer id="footer">
         <p>Streming Service Mockup - Xagly Montilva 2024</p>
       </footer>
     </div>
@@ -102,8 +84,7 @@
     <script type="module" src="/js/script.js"></script>
     <script type="module" src="/js/navTop.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
-    <script src="/js/p5sketch.js"></script>
-    <script src="/js/p5logo.js"></script>
+
     <script type="module" src="/js/sideNav.js"></script>
   </body>
 </html>
