@@ -1,7 +1,8 @@
 # Pop Cinema - Mock Streaming Service
 A front-end project built with HTML, CSS, JavaScript, and p5.js that simulates a streaming service with a unique video sculpture experience. The app allows users to explore and interact with a variety of films and series through an intuitive interface.
 
-![Image](https://github.com/user-attachments/assets/ae6c4ec8-e094-4e2a-a37b-5aee6af4b68f)
+![StreamTV2 - Main PAGE copy](https://github.com/user-attachments/assets/3f5decba-c5a1-4858-af7b-1a660ccfc42e)
+
 
 ## Features
 Video Sculpture: A creative video display inspired by the works of Nam June Paik, offering an engaging and artistic experience.
